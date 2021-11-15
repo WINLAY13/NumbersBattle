@@ -62,7 +62,7 @@ def actGame(dt)
       if idx == PLAYER_INDEX || unit.state == DEAD || unit.state == APPEAR
         continue
 
-      if screenLength(playerUnit.pos, unit.pos) <= DAMAGE_SIZE_MUL * (playerUnit.size + unit.size)
+      if screenLength(playerUnit.pos, unit.pos) <= DAMAGE_SIZE_MUL * 0.5 * (playerUnit.size + unit.size)
         battle(*playerUnit, unit)
         if playerUnit.value > 0.0
           copy(state.lastGamePower, *playerUnit)
