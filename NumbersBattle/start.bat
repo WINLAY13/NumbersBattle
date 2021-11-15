@@ -1,1 +1,0 @@
-start dasbox.exe scripts/number_battle_main.das
